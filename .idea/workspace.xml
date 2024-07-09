@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23a265c6-49a1-4863-9832-7cbca31a4181" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/all_together_7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeeZeynepTozge.pdf.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Controls amp Automation Engineer mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Controls amp Automation Engineer mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Electrical Engineer Space mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Electrical Engineer Space mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Electrical Systems Engineer mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Electrical Systems Engineer mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/ElectricianEngineer  Battery Assembly mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/ElectricianEngineer  Battery Assembly mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Electronics Design Engineer mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Electronics Design Engineer mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Embedded Electronics Engineer mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Embedded Electronics Engineer mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Embedded Software Developer mfd Electronics Control Technology_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Embedded Software Developer mfd Electronics Control Technology_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Energie Effizienz Experte mfd hybrid_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Energie Effizienz Experte mfd hybrid_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Energieberater mfd hybrid_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Energieberater mfd hybrid_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Energy Efficiency  Building Services Internship mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Energy Efficiency  Building Services Internship mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Energy Efficiency  Building Services Working Student mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Energy Efficiency  Building Services Working Student mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Flight Safety Engineer mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Flight Safety Engineer mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Hardware Developer RFID Products mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Hardware Developer RFID Products mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Hardware Engineer mfd Automotive_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Hardware Engineer mfd Automotive_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Hardware Engineer optical Communication mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Hardware Engineer optical Communication mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/HardwareEntwickler mwd Leistungselektronik_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/HardwareEntwickler mwd Leistungselektronik_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Junior Elektroingenieur mwd Netzintegration  Erneuerbare Energien_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Junior Elektroingenieur mwd Netzintegration  Erneuerbare Energien_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Konstrukteurin  Elektrotechnik mwd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Konstrukteurin  Elektrotechnik mwd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Otomotiv Hata ve Kusur Yneticisi mfd Almanyada istihdam_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Otomotiv Hata ve Kusur Yneticisi mfd Almanyada istihdam_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Project Engineer mfd  Airworthiness_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Project Engineer mfd  Airworthiness_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Project Engineer mfd HighVoltage Safety Automotive_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Project Engineer mfd HighVoltage Safety Automotive_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Project Engineer mfd Product Development for Medical Devices_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Project Engineer mfd Product Development for Medical Devices_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Project Engineer mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Project Engineer mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Projektingenieur Elektrotechnik  Photovoltaik mwd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Projektingenieur Elektrotechnik  Photovoltaik mwd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Senior Electrical Engineer  PCBASystem Design mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Senior Electrical Engineer  PCBASystem Design mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Senior Power Electronics Hardware Engineer mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Senior Power Electronics Hardware Engineer mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Test ve Dorulama Mhendisi mfd Almanyada istihdam_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Test ve Dorulama Mhendisi mfd Almanyada istihdam_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_docs/Trainer Power Electronics DACH amp UK mfd_application.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_docs/Trainer Power Electronics DACH amp UK mfd_application.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_touch_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_touch_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/find_mails_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_mails_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parse_data_linkedin_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/parse_data_linkedin_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/write_mails_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/write_mails_3.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ibo4mKAYcjfewyrxgLDTQDxUtg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.all_together_7.executor": "Run",
+    "Python.final_touch_5.executor": "Run",
+    "Python.find_mails_4.executor": "Run",
+    "Python.parse_data_linkedin_1.executor": "Run",
+    "Python.preprocess_jsons_2.executor": "Run",
+    "Python.write_mails_3.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/tempa/Desktop/appl_stuff/linked_in_hire/hire_nshit",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.parse_data_linkedin_1">
+    <configuration name="all_together_7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hire_nshit" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/all_together_7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="final_touch_5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hire_nshit" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_touch_5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="find_mails_4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hire_nshit" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_mails_4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="parse_data_linkedin_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hire_nshit" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parse_data_linkedin_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="write_mails_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hire_nshit" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/write_mails_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.parse_data_linkedin_1" />
+        <item itemvalue="Python.all_together_7" />
+        <item itemvalue="Python.final_touch_5" />
+        <item itemvalue="Python.write_mails_3" />
+        <item itemvalue="Python.find_mails_4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23a265c6-49a1-4863-9832-7cbca31a4181" name="Changes" comment="" />
+      <created>1719768448647</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719768448647</updated>
+    </task>
+    <servers />
+  </component>
+</project>

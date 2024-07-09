@@ -1,0 +1,17 @@
+
+.venv/
+configs.py
+raw_data_parsed/
+processed_data/
+written/
+mails/
+mails_2/
+applications/
+final_docs/
+dbs/
+archieve/
+
+*.txt
+*.csv
+*.pdf
+
