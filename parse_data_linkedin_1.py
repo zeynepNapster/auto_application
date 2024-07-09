@@ -32,22 +32,21 @@ def extract_job_data(driver, link):
     for _ in range((job_count + 24) // 25):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(3)
-        try:
-            load_more_button = driver.find_element(By.XPATH, "//button[@aria-label='Load more results']")
-            driver.execute_script("arguments[0].click();", load_more_button)
-            time.sleep(3)
-            CT=CT+1
-            if CT>100:
-                break
-        except:
+
+        load_more_button = driver.find_element(By.XPATH, "//button[@aria-label='See more jobs']")
+        driver.execute_script("arguments[0].click();", load_more_button)
+        time.sleep(3)
+        CT=CT+1
+        if CT>200:
             break
+
 
     company_names = [elem.text for elem in driver.find_elements(By.CLASS_NAME, 'base-search-card__subtitle')]
     title_names = [elem.text for elem in driver.find_elements(By.CLASS_NAME, 'base-search-card__title')]
     job_links = [elem.get_attribute('href') for elem in driver.find_elements(By.CSS_SELECTOR, 'a.base-card__full-link')]
 
     job_details = extract_job_details(driver, job_links)
-
+    print(len(company_names))
     return {
         'Company_name': company_names,
         'Title_name': title_names,
@@ -57,7 +56,8 @@ def extract_job_data(driver, link):
 
 
 # Main script
-links=[
+links=['https://www.linkedin.com/jobs/search?keywords=Electrical%20Engineering&location=Munich&geoId=100477049&distance=25&f_E=2&f_TPR=&f_WT=1%2C3%2C2&position=1&pageNum=0',
+       'https://www.linkedin.com/jobs/search?keywords=technical%20porcurement&location=Munich&geoId=100477049&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0',
 'https://www.linkedin.com/jobs/search?keywords=Power%20Engineering&location=Munich&geoId=100477049&distance=25&f_TPR=&f_E=2&position=1&pageNum=0'
 ,'https://www.linkedin.com/jobs/search?keywords=Solar%20Engineer&location=M%C3%BCnchen%2C%20Bayern%2C%20Deutschland&geoId=100477049&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0'
 ,'https://www.linkedin.com/jobs/search?keywords=Solar%20Energy%20Engineering&location=M%C3%BCnchen%2C%20Bayern%2C%20Deutschland&geoId=100477049&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0'
@@ -76,13 +76,16 @@ links=[
     'https://www.linkedin.com/jobs/search?keywords=Project%20Engineer&location=Augsburg%2C%20Bayern%2C%20Deutschland&geoId=103849782&distance=25&f_TPR=&f_E=2&position=1&pageNum=0',
 'https://www.linkedin.com/jobs/search?keywords=power%20engineer&location=Augsburg%2C%20Bayern%2C%20Deutschland&geoId=103849782&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0']
 
-
-driver = webdriver.Chrome()
+options = webdriver.ChromeOptions()
+options.add_experimental_option('prefs', {'intl.accept_languages': 'en,en_US'})
+driver = webdriver.Chrome(options=options)
 driver.implicitly_wait(10)
 
 for idx, link in enumerate(links):
     try:
         job_data = extract_job_data(driver, link)
+
+
         if job_data:
             with open(f'./raw_data_parsed/linked_in_{idx + 1}.json', 'w') as outfile:
                 json.dump(job_data, outfile)
