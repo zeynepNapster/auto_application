@@ -5,7 +5,7 @@ import os
 import re
 from langchain import PromptTemplate
 
-df=pd.read_csv('Expo_Companies.csv').rename(columns={'Unnamed: 0':'Companies'})
+df=pd.read_csv('archieve/Expo_Companies.csv').rename(columns={'Unnamed: 0': 'Companies'})
 df.dropna(subset=['Locations'],inplace=True)
 df=df[df['Locations'].str.match('.*(munich|MUNICH|Munich).*')]
 os.environ["OPENAI_API_KEY"] = 'sk-proj-cUi8xZ3zfWwyQmhKqQMjT3BlbkFJKS5AevM7ONvEF8930fXQ'

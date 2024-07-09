@@ -11,7 +11,7 @@ import chromadb
 
 #///////////////////////////////// LOAD CV
 from pypdf import PdfReader
-pdf_file=PdfReader('ResumeeZeynepTozge.pdf')
+pdf_file=PdfReader('cv/ResumeeZeynepTozge.pdf')
 page = pdf_file.pages[0]
 
 

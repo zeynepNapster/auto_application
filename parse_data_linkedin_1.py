@@ -25,10 +25,10 @@ def extract_job_data(driver, link):
     time.sleep(3)
 
     try:
-        job_count = int(driver.find_element(By.CLASS_NAME, 'results-context-header__job-count').text.replace(',', ''))
+        job_count = int(driver.find_element(By.CLASS_NAME, 'results-context-header__job-count').text.replace(',', '').replace('+', ''))
     except Exception as e:
         job_count=1000
-
+    CT=0
     for _ in range((job_count + 24) // 25):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(3)
@@ -36,6 +36,9 @@ def extract_job_data(driver, link):
             load_more_button = driver.find_element(By.XPATH, "//button[@aria-label='Load more results']")
             driver.execute_script("arguments[0].click();", load_more_button)
             time.sleep(3)
+            CT=CT+1
+            if CT>100:
+                break
         except:
             break
 
@@ -48,7 +51,8 @@ def extract_job_data(driver, link):
     return {
         'Company_name': company_names,
         'Title_name': title_names,
-        'Job_details': job_details
+        'Job_details': job_details,
+        'URL':job_links
     }
 
 

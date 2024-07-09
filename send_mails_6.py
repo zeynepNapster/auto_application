@@ -55,7 +55,7 @@ def send_email(subject, body, to_email, from_email, from_password, attachment_pa
 
 
 
-attachment_path = "ResumeeZeynepTozge.pdf"  # e.g., "/path/to/your/file.pdf"
+attachment_path = "cv/ResumeeZeynepTozge.pdf"  # e.g., "/path/to/your/file.pdf"
 
 
 

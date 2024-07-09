@@ -22,8 +22,7 @@ from langchain import PromptTemplate
 wikipedia = WikipediaAPIWrapper()
 search = DuckDuckGoSearchRun()
 py=PythonREPL()
-os.environ["OPENAI_API_KEY"] = 'sk-proj-cUi8xZ3zfWwyQmhKqQMjT3BlbkFJKS5AevM7ONvEF8930fXQ'
-SERPAPI_API_KEY="1c1954d76a0d8fbe1d0f21eff33b3f213f367a517e4a66cfba078d79cfd4d797"
+
 yf=YahooFinanceNewsTool()
 search_2=SerpAPIWrapper(serpapi_api_key=SERPAPI_API_KEY)
 tools = [
@@ -66,7 +65,7 @@ zero_shot_agent = initialize_agent(
 )
 
 from pypdf import PdfReader
-pdf_file=PdfReader('ResumeeZeynepTozge.pdf')
+pdf_file=PdfReader('cv/ResumeeZeynepTozge.pdf')
 page = pdf_file.pages[0]
 import pandas as pd
 import os
@@ -99,7 +98,7 @@ from langchain_core.prompts import PromptTemplate
 
 prompt = PromptTemplate.from_template(prompt_template)
 from pypdf import PdfReader
-pdf_file=PdfReader('ResumeeZeynepTozge.pdf')
+pdf_file=PdfReader('cv/ResumeeZeynepTozge.pdf')
 page = pdf_file.pages[0]
 
 
