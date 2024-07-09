@@ -28,17 +28,23 @@ def extract_job_data(driver, link):
         job_count = int(driver.find_element(By.CLASS_NAME, 'results-context-header__job-count').text.replace(',', '').replace('+', ''))
     except Exception as e:
         job_count=1000
+    print(job_count)
     CT=0
     for _ in range((job_count + 24) // 25):
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(3)
+        try:
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(3)
+            driver.execute_script("window.scrollTo( document.body.scrollHeight,0);")
+            time.sleep(3)
+            load_more_button = driver.find_element(By.XPATH, "//button[@aria-label='See more jobs']")
+            driver.execute_script("arguments[0].click();", load_more_button)
+            time.sleep(3)
+            CT=CT+1
+            if CT>200:
+                break
+        except:
+            pass
 
-        load_more_button = driver.find_element(By.XPATH, "//button[@aria-label='See more jobs']")
-        driver.execute_script("arguments[0].click();", load_more_button)
-        time.sleep(3)
-        CT=CT+1
-        if CT>200:
-            break
 
 
     company_names = [elem.text for elem in driver.find_elements(By.CLASS_NAME, 'base-search-card__subtitle')]
@@ -56,7 +62,8 @@ def extract_job_data(driver, link):
 
 
 # Main script
-links=['https://www.linkedin.com/jobs/search?keywords=Electrical%20Engineering&location=Munich&geoId=100477049&distance=25&f_E=2&f_TPR=&f_WT=1%2C3%2C2&position=1&pageNum=0',
+links=['https://www.linkedin.com/jobs/search?keywords=power&location=Munich&geoId=100477049&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0',
+    'https://www.linkedin.com/jobs/search?keywords=Electrical%20Engineering&location=Munich&geoId=100477049&distance=25&f_E=2&f_TPR=&f_WT=1%2C3%2C2&position=1&pageNum=0',
        'https://www.linkedin.com/jobs/search?keywords=technical%20porcurement&location=Munich&geoId=100477049&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0',
 'https://www.linkedin.com/jobs/search?keywords=Power%20Engineering&location=Munich&geoId=100477049&distance=25&f_TPR=&f_E=2&position=1&pageNum=0'
 ,'https://www.linkedin.com/jobs/search?keywords=Solar%20Engineer&location=M%C3%BCnchen%2C%20Bayern%2C%20Deutschland&geoId=100477049&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0'
