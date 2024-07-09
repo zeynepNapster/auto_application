@@ -87,6 +87,7 @@ for j in os.listdir('./raw_data_parsed'):
             content=extract_div_content_with_regex(file['Job_details'][i])
             rs=extract_headers_and_emails(file['Job_details'][i])
             rs.update({'job_description':content})
+            rs.update({'url': file['URL'][i]})
             # Convert the dictionary to a JSON object
             if file['Job_details'][i]:
                 with open(f'./processed_data/Jop_Application_{k}.json', 'w') as f:

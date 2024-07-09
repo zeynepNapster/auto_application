@@ -19,12 +19,13 @@ from langchain.chains import LLMChain
 from langchain_core.prompts import PromptTemplate
 from langchain_core.prompts import PromptTemplate
 from langchain import PromptTemplate
+import configs
 wikipedia = WikipediaAPIWrapper()
 search = DuckDuckGoSearchRun()
 py=PythonREPL()
 
 yf=YahooFinanceNewsTool()
-search_2=SerpAPIWrapper(serpapi_api_key=SERPAPI_API_KEY)
+search_2=SerpAPIWrapper(serpapi_api_key=configs.SERPAPI_API_KEY)
 tools = [
     Tool(
     name='wikipedia',
@@ -105,32 +106,70 @@ page = pdf_file.pages[0]
 import openai
 
 
-for k,linked_in_card in enumerate(os.listdir('./processed_data')):#
+for k,linked_in_card in enumerate(os.listdir('./processed_data/jsons')):#
 
 
 
     try:
-        file = load_json(os.path.join('./processed_data', linked_in_card))
+        file = load_json(os.path.join('./processed_data/jsons', linked_in_card))
         name = filter_alphabetic(file['h1_headers'])
         if os.path.exists(os.path.join(f'./applications/{name}_application.txt')):
             continue
 
         prompt_template: str = """
-        Write an application email for the following job on LinkedIn {job} described as follows: {jobdescription}
-         for this company: {company}. 
-         Try to identify symbiotic relationships between the job description 
-         and the applicant's CV that would make the candidate a good fit and elaborate on that.
-         If the job description is in German, still reply in English, and make sure to highlight
-          how the candidate is improving their German skills through extensive courses.
-           If the job does not require academic degrees, leave them out since the applicant already finished its master degree.
-           Also, ignore internships and working student offers.
+### Instructions:
+
+As an expert in crafting professional application emails, your task is to generate an engaging and well-structured job application email for the position listed on LinkedIn. 
+
+Below are the details you need to incorporate:
+
+- Job Title: {job}
+- Job Description: {jobdescription}
+- Company Name: {company}
+
+### Context:
+
+1. Identify and elaborate on key symbiotic relationships between the job description and the applicant's CV, showcasing why the candidate is an excellent fit for the role.
+2. If the job description is in German, reply in English, emphasizing the candidate's commitment to improving their German skills through intensive courses.
+3. Exclude mention of academic degrees if the job does not specifically require them, as the applicant already holds a master’s degree.
+4. Ignore internships and working student positions if they are not relevant to the application.
+
+### Desired Outcome:
+
+Create a professional and compelling email that highlights the candidate's qualifications, experience, and enthusiasm for the role, making it clear why they would be a valuable addition to the company.
+
+### Email Format and Style:
+
+- Professional and concise language
+- Well-structured paragraphs
+- A friendly but formal tone
+- Length: Around 3-4 short paragraphs
+
+### Example:
+
+Subject: Application for {job} at {company}
+
+Dear Hiring Committee,
+
+I am writing to express my interest in the {job} position at {company}, as advertised. With a strong background in {relevant experience/skills}, I am confident that my expertise aligns perfectly with the requirements of this role.
+
+In my previous role at {Previous Company}, I effectively {relevant achievement/task}, which mirrors the responsibilities outlined in your job description. Additionally, I am currently enhancing my German language skills through extensive courses to ensure seamless communication within your team and with clients, if necessary.
+
+I am excited about the opportunity to contribute to {company} and am particularly drawn to {specific aspect of the company or job}. I am eager to bring my {specific skills or attributes} to your team and help achieve continued success.
+
+Thank you for considering my application. I look forward to the possibility of discussing my application further.
+
+Best regards,
+[Your Name]
+
+---
         """
         prompt = PromptTemplate.from_template(prompt_template)
         pp=prompt.format(job=file['h1_headers'], company=file['h4_headers'],
                               jobdescription=file['job_description'])
 
 
-        print(file['h4_headers'])
+
         res= openai.ChatCompletion.create(
             model="gpt-4",
             messages=[
