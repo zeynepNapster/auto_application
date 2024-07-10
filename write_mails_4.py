@@ -143,7 +143,7 @@ Create a professional and compelling email that highlights the candidate's quali
 - Professional and concise language
 - Well-structured paragraphs
 - A friendly but formal tone
-- Length: Around 3-4 short paragraphs
+- Length: Around 7-9 comprehensive paragraphs
 
 ### Example:
 
@@ -171,7 +171,7 @@ Best regards,
 
 
         res= openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system",
                  "content": f"You are an Application Assistant helping a person to write a application mail given an linkedin job offer and the persons cv {page.extract_text()}"},
@@ -181,6 +181,6 @@ Best regards,
 
 
         with open(os.path.join(f'./applications/{name}_application.txt'), 'w', encoding='utf-8') as file:
-            file.write(str(res.choices[0].message["content"]))
+            file.write(str(res.choices[0].message["content"])+'\n'+file['url'])
     except:
         pass

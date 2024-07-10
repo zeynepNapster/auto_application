@@ -85,7 +85,7 @@ links=['https://www.linkedin.com/jobs/search?keywords=power&location=Munich&geoI
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option('prefs', {'intl.accept_languages': 'en,en_US'})
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome()
 driver.implicitly_wait(10)
 
 for idx, link in enumerate(links):
