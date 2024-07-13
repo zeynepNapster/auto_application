@@ -70,9 +70,9 @@ replacements = {
     'm/w/d':'',
     '()':''
 }
-for k,folder in  enumerate(os.listdir('./applications')):
-    for files in os.listdir(os.path.join('./applications',folder)):
-        pth=os.path.join('./applications',folder,files)
+for k,folder in  enumerate(os.listdir('/home/tempa/Desktop/appl_stuff/linked_in_hire/hire_repo/applications')):
+    for files in os.listdir(os.path.join('/home/tempa/Desktop/appl_stuff/linked_in_hire/hire_repo/applications',folder)):
+        pth=os.path.join('/home/tempa/Desktop/appl_stuff/linked_in_hire/hire_repo/applications',folder,files)
         if 'usage' in pth:
             f = open(pth, 'r')
             desc= f.read().split('||')
