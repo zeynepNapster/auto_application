@@ -74,7 +74,7 @@ def extract_headers_and_emails(html_content):
 
     return {
         'h1_headers': h1_headers[0],
-        'h4_headers': [ re.sub(r'\s+', ' ',h4_head.replace("\n"," ")) for h4_head in h4_headers][1],
+        'h4_headers': [ re.sub(r'\s+', ' ',h4_head.replace("\n"," ").split(',')[0]) for h4_head in h4_headers][1],
         'emails': list(set(emails))
     }
 
@@ -90,7 +90,10 @@ for j in os.listdir('./raw_data_parsed'):
             rs.update({'url': file['URL'][i]})
             # Convert the dictionary to a JSON object
             if file['Job_details'][i]:
-                with open(f'./processed_data/Jop_Application_{k}.json', 'w') as f:
+                with open(f'./processed_data/jsons/Jop_Application_{k}.json', 'w') as f:
                     json.dump(rs, f)
+                with open(f'./processed_data/texts/Jop_Application_{k}.txt', 'w') as f:
+                    f.write(rs['h1_headers']+'\n'+\
+                            rs['h4_headers']+'\n'+content)
         except:
             pass
